@@ -1,0 +1,16 @@
+.footer_container{
+    padding: 10px;
+    color: gray;
+    font-weight: bold;
+}
+.footer_copy{
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+}
+.footer_link{
+    display: flex;
+    gap:10px;
+    text-decoration: underline;
+}

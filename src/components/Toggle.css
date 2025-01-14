@@ -1,0 +1,20 @@
+.toggle_container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.toggle_header{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.toggle_content{
+    padding-bottom: 10px;
+}
+.toggle_button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    font-size:20px;
+}

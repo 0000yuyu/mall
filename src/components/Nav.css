@@ -1,0 +1,33 @@
+.nav_container{
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+}
+.nav_content{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    cursor: pointer;
+}
+.nav_content span{
+    padding-bottom: 10px;
+}
+.nav_content .active{
+    border-bottom: 3px solid white;
+}
+.nav_image{
+    box-sizing: border-box;
+    position: relative;
+}
+.nav_image img{
+    object-fit: contain;
+    height:500px;
+    width: 100%;
+}
+.nav_image.summary{
+    position: absolute;
+    bottom:20px;
+    left:30px;
+    color:white;
+    background-color: transparent;
+}
