@@ -19,7 +19,9 @@ function App() {
 function AppLayout(){
   return (
     <div class="layout_container">
-      <Outlet/>
+      <div className='layout_outlet'>
+        <Outlet/>
+      </div>
       <Menu/>
     </div>
   )

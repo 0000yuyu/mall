@@ -1,8 +1,14 @@
-.home_container{
-    
-}
 .home_banner{
     background-color: #000000;
-    padding: 20px;
-    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:10px;
+}
+.home_container{
+    height: 100%;
+    overflow: scroll;
+}
+.home_container::-webkit-scrollbar {
+    display: none; /* 스크롤바 숨기기 */
 }
