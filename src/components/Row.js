@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Row.css'
 import axios from '../api/axios';
+import requests from '../api/request';
 
 export default function Row({title,category}) {
   const [products, setProducts] = useState([])
@@ -8,7 +9,7 @@ export default function Row({title,category}) {
   useEffect(() => {
     const fetchData = async () => {
         try {
-            const response = await axios.get("",{
+            const response = await axios.get(requests.fetchShopItem,{
               params:{
                 query:category,
                 display:20
