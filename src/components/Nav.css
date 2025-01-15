@@ -15,19 +15,3 @@
 .nav_content .active{
     border-bottom: 3px solid white;
 }
-.nav_image{
-    box-sizing: border-box;
-    position: relative;
-}
-.nav_image img{
-    object-fit: contain;
-    height:500px;
-    width: 100%;
-}
-.nav_image.summary{
-    position: absolute;
-    bottom:20px;
-    left:30px;
-    color:white;
-    background-color: transparent;
-}
