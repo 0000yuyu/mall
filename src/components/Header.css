@@ -8,10 +8,11 @@
     flex-direction:row;
     gap:10px;
     align-items: center;
+    color:white;
 }
-.header_icons img{
-    width:30px;
-    height: 30px;
+.header_icon{
+    width:30px !important;
+    height: 30px !important;
 }
 .header_logo{
     height:30px;

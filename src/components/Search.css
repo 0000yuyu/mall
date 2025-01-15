@@ -4,8 +4,16 @@
     padding: 5px;
     background-color: white;
     border-radius: 5px;
+    height:25px;
+    justify-content: center;
 }
 .search_container input{
     flex:1;
     border:none;
+}
+.search_icon{
+    color:gray;
+    width:20px;
+    align-items: center;
+    padding-right:10px;
 }

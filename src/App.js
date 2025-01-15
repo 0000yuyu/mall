@@ -10,6 +10,7 @@ function App() {
       <Routes>
       <Route path="/" element={<AppLayout />}>
         <Route path='home/*' element={<Home/>}/>
+        <Route path='category/*' element={<Category/>}/>
       </Route>
       </Routes>
     </div>
