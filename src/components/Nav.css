@@ -1,17 +1,15 @@
-.nav_container{
+.nav_section{
     margin-top:10px;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    gap: 10px;
 }
 .nav_content{
-    display: flex;
-    flex-direction: row;
-    gap:10px;
     cursor: pointer;
-}
-.nav_content span{
+    text-decoration: none;
+    color:white;
     padding-bottom: 10px;
 }
-.nav_content .active{
+.nav_content.active{
     border-bottom: 3px solid white;
 }

@@ -28,17 +28,16 @@ export default function BannerImg() {
     }, []);
     function scrollAction(){
         const container = containerRef.current;
-        if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-            container.scrollLeft = 0;
+        if(container == null)
+            return;
+        if (container.scrollLeft + container.clientWidth + 10 >= container.scrollWidth) {
+            containerRef.current.scrollBy({ left:-container.scrollWidth, behavior: 'smooth' });
         }
         else
             scrollRight();
     }
 const scrollRight = () => {
     containerRef.current.scrollBy({ left: window.innerWidth, behavior: 'smooth' }); // 오른쪽으로 스크롤
-    };
-    const scrollLeft = () => {
-    containerRef.current.scrollBy({ left: -window.innerWidth, behavior: 'smooth' }); // 오른쪽으로 스크롤
     };
   return (
     <div>

@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <Routes>
       <Route path="/" element={<HomeLayout />}>
-        <Route index element={<Content />} />
+        <Route path='/' element={<Content />} />
         <Route path='c' element={<Category/>}/>
       </Route>
     </Routes>
