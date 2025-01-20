@@ -4,6 +4,8 @@
     flex-direction: column;
     gap: 10px;
     padding:10px;
+    padding-bottom: 0;
+    color:white;
 }
 .home_container{
     height: 100%;

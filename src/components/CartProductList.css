@@ -1,0 +1,30 @@
+/* productList_container > (header > brand) , (content > product) */
+.productList_container{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap:30px;
+    border-bottom:1px solid rgba(173, 171, 171, 0.231);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border:1px solid black;
+    
+}
+.productList_header{
+    display: flex;
+    font-weight: bold;
+}
+.productList_section{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    gap:10px;
+    background-color:red;
+}
+.productList_content{
+    display: flex;
+    flex-direction: row;
+    height:150px;
+    box-sizing: border-box;
+    background-color: purple;
+}

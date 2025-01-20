@@ -1,0 +1,11 @@
+input[type="checkbox"]{
+    accent-color: black;
+    box-sizing: border-box;
+    width: 20px;
+    height: 15px;
+}
+.check_container{
+    display: flex;
+    align-items: flex-start;
+    padding-right: 10px;
+}

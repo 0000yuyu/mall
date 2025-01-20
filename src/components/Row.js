@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './Row.css'
 import axios from '../api/axios';
 import requests from '../api/request';
+import {ReactComponent as HeartIcon} from '../assets/icons/heart.svg'
 
 export default function Row({title,category}) {
   const [products, setProducts] = useState([])
@@ -56,7 +57,7 @@ const setType = (productType) =>{
   return (
     <div className='row_container'>
       <div className='row_header'>
-        <h3>{title}</h3>
+        <h3 className='row_header_title'>{title}</h3>
         <div className='row_buttons'>
           <button onClick={scrollLeft}>◀</button>
           <button onClick={scrollRight}>▶</button>
@@ -68,6 +69,12 @@ const setType = (productType) =>{
           <div className='product_section' key={product.productId}>
             <div className='product_image'>
               <img src={product.image}></img>
+              <div className="product_heart">
+                <span className="heart-icon">
+                  <HeartIcon className="heart-icon" />
+                  <span className="heart-fill"></span>
+                </span>
+              </div>
             </div>
             <div className='product_content'>
               <span className='product_mall'>{product.marker || product.mallName}</span>

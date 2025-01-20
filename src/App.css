@@ -19,7 +19,6 @@ div#root{
 html,body{
     height:100%;
     width:100%;
-    overflow: scroll;
 }
 body::-webkit-scrollbar {
     display: none; /* 스크롤바 숨기기 */

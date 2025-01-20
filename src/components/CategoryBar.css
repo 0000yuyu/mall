@@ -1,0 +1,15 @@
+.category_name {
+    white-space: nowrap;
+    display: flex;
+    cursor: pointer;
+}
+
+.category_name_text {
+    padding: 10px;
+}
+
+.category_name.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}

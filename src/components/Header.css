@@ -2,18 +2,48 @@
     display: flex;
     justify-content: space-between;
     flex-direction:row;
+
+    height:30px;
+    padding: 10px;
+}
+.header_container.fixed{
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    right: 0;
+    background-color: pink;
 }
 .header_icons{
     display:flex;
     flex-direction:row;
     gap:10px;
+    height:100%;
     align-items: center;
-    color:white;
 }
 .header_icon{
-    width:30px !important;
-    height: 30px !important;
+    height:100%;
+    display: flex;
 }
-.header_logo{
-    height:30px;
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left * ,.right *{
+    color:inherit;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    border:none;
+    cursor: pointer;
+}
+.left *{
+    height:100%;
+}
+.right *{
+    object-fit: contain;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
 }
